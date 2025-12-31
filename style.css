@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(#111, #222);
+    color: white;
+}
+
+.lobby {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel, .right-panel {
+    width: 25%;
+    padding: 20px;
+    background: #1c1c1c;
+}
+
+.center-panel {
+    width: 50%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f5b400;
+    color: black;
+}
+
+canvas {
+    background: #2a2a2a;
+    border: 2px solid #555;
+}
+
+.start-btn {
+    margin-top: 20px;
+    padding: 15px;
+    width: 200px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #f5b400, #ff9800);
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.start-btn:hover {
+    background: linear-gradient(45deg, #ff9800, #f5b400);
+  }
