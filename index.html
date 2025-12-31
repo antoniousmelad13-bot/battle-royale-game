@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battle Royale Lobby</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lobby">
+
+    <div class="left-panel">
+        <h2>CHARACTER</h2>
+        <button onclick="selectCharacter('karas')">Karas</button>
+        <button onclick="selectCharacter('mina')">Mina</button>
+        <button onclick="selectCharacter('antonious')">Antonious</button>
+
+        <h2>OUTFIT</h2>
+        <button onclick="changeOutfit('Urban Suit')">Urban</button>
+        <button onclick="changeOutfit('Desert Armor')">Desert</button>
+        <button onclick="changeOutfit('Snow Jacket')">Snow</button>
+    </div>
+
+    <div class="center-panel">
+        <canvas id="preview" width="300" height="400"></canvas>
+        <h3 id="playerName"></h3>
+        <p id="playerOutfit"></p>
+        <p id="playerWeapon"></p>
+
+        <button class="start-btn" onclick="startMatch()">جولة</button>
+    </div>
+
+    <div class="right-panel">
+        <h2>MAP</h2>
+        <button onclick="selectMap('Desert')">Desert</button>
+        <button onclick="selectMap('Forest')">Forest</button>
+        <button onclick="selectMap('City')">City</button>
+        <button onclick="selectMap('Snow')">Snow</button>
+
+        <h2>WEAPON</h2>
+        <button onclick="selectWeapon('Rifle')">Rifle</button>
+        <button onclick="selectWeapon('SMG')">SMG</button>
+        <button onclick="selectWeapon('Sniper')">Sniper</button>
+
+        <h2>CRATE</h2>
+        <button onclick="openCrate()">Open Crate</button>
+    </div>
+
+</div>
+
+<script src="lobby.js"></script>
+</body>
+  </html>
